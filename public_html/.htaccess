@@ -1,0 +1,34 @@
+##
+#Created by Adam Filkor <adam.filkor@gmail> filkor.org 
+#
+
+RewriteEngine On
+RewriteBase /
+
+RewriteCond %{ENV:REDIRECT_END}  =1
+RewriteRule ^                    -					  [L,NS]
+
+# remove php file extension on GETs (no point in /[^?\s]+\.php as rule pattern requires this)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_METHOD}   =GET
+RewriteRule (.*)\.php$          $1/                      [L,R=301]
+
+# add trailing slash
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^.*[^/]$            $0/                      [L,R=301]
+
+# terminate if file exists.  Note this match may be after internal redirect.
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteRule ^                   -                        [L,E=END:1]
+
+# terminate if directory index.php exists.  Note this match may be after internal redirect.
+RewriteCond %{REQUEST_FILENAME}    -d
+RewriteCond %{REQUEST_FILENAME}index.php    -f
+RewriteRule ^(.*)(/?)$             $1/index.php          [L,NS,E=END:1]
+
+# resolve urls to matching php files 
+RewriteCond %{DOCUMENT_ROOT}/$1.php  -f
+RewriteRule ^(.*?)/?$              $1.php                [L,NS,E=END:1]
+
+# Anything else redirect to the 404 script.  This one does have the leading /
+RewriteRule ^                      /404.php              [L,NS,E=END:1]

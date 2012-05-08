@@ -1,0 +1,4 @@
+uploaded_files/*
+external/mysql_connect.php
+delete_old_files.sh
+logs/*
