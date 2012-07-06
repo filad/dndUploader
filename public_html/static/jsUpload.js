@@ -9,7 +9,7 @@
 /**
  * The core upload function. The way it works is very simple: slice the file on client side, sends the slices
  * to the server. When no more slices remain the server merges the slices (or packets). This function continuously stores
- * the current packeges' number in the localStorage, so we can pause the upload anytime,
+ * the current packages' number in the localStorage, so we can pause the upload anytime,
  * then continue upload from the latest package.
  * @param {Object} options 
  * @param options.file The current File object
