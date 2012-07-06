@@ -60,7 +60,7 @@
 			</li>
 			
 			<li>
-				<u>Why is this website is so special ?</u>
+				<u>Why is this website so special ?</u>
 				<p>
 					You can pause the upload process, even turn off your computer, and only 
 					Javasript was used on client side, no Flash required.</p> 
@@ -80,15 +80,20 @@
 					So you can send the file as little packets. They will be merged by the server at the end of the upload.
 				</p>
 				<p>
-					As you can see, the new Javascript File API is a very handy tool, I like it! 
+					..as you can see, the new Javascript File API is a very handy tool, I like it! 
 					
+				</p>
+				<p>
+					The other technology the site is using is the Javascript localStorage. To keep the files after the browser closes,
+					we need some place to save the filedetails... so if you come back you don't have to restart the whole uploading process again!
+					If you drop the same files when you come back, the server will know that you want to continue your uploads. 
 				</p>
 			</li>
 			<li>
 				<u>Source code ?</u>
 				<p>
 				Of course:)<br>
-				You will find it on <a target="_blank" href="http://github.com/filad/dndUploader">github.com/filad</a><br>
+				You will find it on <a target="_blank" href="http://github.com/filad/dndUploader">github.com/filad/dndUploader</a><br>
 				Enjoy.
 				</p>
 			</li>

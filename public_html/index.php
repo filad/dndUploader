@@ -82,7 +82,7 @@
 		<div id="more-info">
 			<ul>
 				<li>You can upload by drag and drop files from your folders, or click above to upload in the usual way. Multiple files are allowed.</li>
-				<li>You can pause the uploads (you can even turn off your computer). </li>
+				<li>You can pause the uploads (you can even close your browser, or turn off your computer.. you don't have to restart again from the beginning). </li>
 				<li>The maximum file sizes could be hundreds of MB-s.</li>
 				<li>This is just a demonstration, the files will be deleted after 1 hour.</li>
 				<li>For more information, see the <a href="/FAQ/">FAQ</a>.

@@ -27,7 +27,7 @@ if (file_exists(FILE_PATH . $_GET['id'])) {
 	$originalFileName = strlen($originalFileName) <= 45 ? $originalFileName : substr($originalFileName, 0, 45).'...';
 	
 	//if file is  uploaded more than one hour then -> 404
-	if ($uploadDate < (time() - 3600)) {
+	if ($uploadDate < (time() - 3600) && !isset($_GET['p'])) {
 		header('Location: /404/?reason=oldFile');
 		exit;
 	}
