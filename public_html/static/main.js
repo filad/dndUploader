@@ -158,7 +158,7 @@ function createPreviewElements(files){
 		if (this.fileName.length > 45)
 			this.fileName = this.fileName.substr(0, 45) + '...';
 		
-	
+		this.fileName = htmlEscape(this.fileName);
 		var droppedFiles = document.getElementById('dropped-files');
 		
 		//create <li> item
@@ -344,4 +344,14 @@ function updateResumedItems(file, progressElement, pauseButton, downloadLink) {
 	} else {
 		return 0.01; //0.01 and not 0 because of jquery progressBar bug...
 	}
+}
+
+
+function htmlEscape(str) {
+    return String(str)
+            .replace(/&/g, '&amp;')
+            .replace(/"/g, '&quot;')
+            .replace(/'/g, '&#39;')
+            .replace(/</g, '&lt;')
+            .replace(/>/g, '&gt;');
 }
