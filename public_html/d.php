@@ -25,6 +25,7 @@ if (file_exists(FILE_PATH . $_GET['id'])) {
 	
 	//shorten fileName
 	$originalFileName = strlen($originalFileName) <= 45 ? $originalFileName : substr($originalFileName, 0, 45).'...';
+	$originalFileName = htmlentities($originalFileName, ENT_QUOTES);
 	
 	//if file is  uploaded more than one hour then -> 404
 	if ($uploadDate < (time() - 3600) && !isset($_GET['p'])) {
