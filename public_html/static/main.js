@@ -341,8 +341,6 @@ function updateResumedItems(file, progressElement, pauseButton, downloadLink) {
 		}, 400);		
 		
 		
-	} else {
-		return 0.01; //0.01 and not 0 because of jquery progressBar bug...
 	}
 }
 
