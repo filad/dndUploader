@@ -6,7 +6,7 @@
  * @website http://hertzen.com
  */
 
-$filePath = "files/";
+$filePath = "../uploaded_files/";
 $packetSize = 512 * 512; // bytes, need to be same as in JavaScript
 $storeFiles = true;
 
