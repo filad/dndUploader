@@ -267,7 +267,7 @@ function startupload(files){
 							//show download link, we use the serverFileId parameter here 
 							var downloadLink 	   = document.getElementById('downloadLink-' + i);
 							downloadLink.innerHTML = 'Download link';
-							downloadLink.href 	   = 'http://dnduploader.filkor.org/d/?id=' + serverFileId;
+							downloadLink.href 	   = '/d/?id=' + serverFileId;
 						}	
 					});				
 			},
