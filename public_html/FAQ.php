@@ -63,7 +63,7 @@
 				<u>Why is this website so special ?</u>
 				<p>
 					You can pause the upload process, even turn off your computer, and only 
-					Javasript was used on client side, no Flash required.</p> 
+					Javascript was used on client side, no Flash required.</p> 
 				<p>
 					This is very handy on large uploads when you suddenly lose your internet connection...or 
 					just don't have time to wait until the upload ends.
@@ -85,7 +85,7 @@
 				</p>
 				<p>
 					The other technology the site is using is the Javascript localStorage. To keep the files after the browser closes,
-					we need some place to save the filedetails... so if you come back you don't have to restart the whole uploading process again!
+					we need some place to save the filedetails (like filename, size...), so if you come back you don't have to restart the whole uploading process again!
 					If you drop the same files when you come back, the server will know that you want to continue your uploads. 
 				</p>
 			</li>
