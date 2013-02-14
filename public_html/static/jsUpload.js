@@ -196,13 +196,8 @@ function jsUpload(options){
         endByte = startByte+self.packetSize,
         packet;
         
-        if ('mozSlice' in self.file) {
-            // mozilla
-            packet = self.file.mozSlice(startByte, endByte);
-        } else {
-            // webkit
-            packet = self.file.webkitSlice(startByte, endByte);
-        }
+        packet = self.file.slice(startByte, endByte);
+        
         return packet;
     }
     
