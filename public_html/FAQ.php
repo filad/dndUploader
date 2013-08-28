@@ -54,7 +54,13 @@
         <p class="title">dndUploader FAQ</p>
         <p>If you require any more information -> adam.filkor at gmail </p>
         <ul>
-            <li>
+        	<li>This is NOT a fully fledged file upload script. Only a demo I wrote several years ago. (It's 2013 when I write this.)<br>
+        		If you need to handle older browsers etc.. you should check out <a href="http://html5uploader.filkor.org/">http://html5uploader.filkor.org/</a>
+        		<br>
+        		
+        	</li>
+
+            <li style="margin-top: 30px;">
 			<u>What is 'dnd' ?</u>
 			<p>You have the option to upload by drag & drop your files, too. Thats where this name comes from.</p>
 			</li>
@@ -105,10 +111,6 @@
 				<u>Any other things ?</u>
 				<p>Oh of course! </p>
 				<p>Plz don't use IE :)</p>
-				<p>And an important thing is: I have to mention Niklas von Hertzen here. 
-				I read this 'slice the files' idea first on his website. 
-				I learned a lots of things from his source codes. Please visit <a href="http://hertzen.com/">his website</a>, and his interesting experiments, too.
-				</p>
 			</li>
         </ul>
          

@@ -81,6 +81,11 @@
 
 		<div id="more-info">
 			<ul>
+
+				<li>
+					Please note this is NOT a fully fledged file upload script, (it doesn't handle older browsers etc..). This (was) only demo I wrote years ago to demonstrate how to make a resumable file uploader. 
+					Maybe better option would be <a target="_blank" href="http://html5uploader.filkor.org/">http://html5uploader.filkor.org/</a> for you.
+				</li>
 				<li>You can upload by drag and drop files from your folders, or click above to upload in the usual way. Multiple files are allowed.</li>
 				<li>You can pause the uploads (you can even close your browser, or turn off your computer.. you don't have to restart again from the beginning). </li>
 				<li>The maximum file sizes could be hundreds of MB-s.</li>

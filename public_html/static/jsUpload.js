@@ -194,9 +194,11 @@ function jsUpload(options){
         
         var startByte = packetId  * self.packetSize,
         endByte = startByte+self.packetSize,
-        packet;
+        packet,
+        slice;
         
-        packet = self.file.slice(startByte, endByte);
+        slice = self.file.slice || self.file.webkitSlice || self.file.mozSlice;
+        packet = slice.call(self.file, startByte, endByte);
         
         return packet;
     }
